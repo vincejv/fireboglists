@@ -23,7 +23,7 @@ echo "Commiting to repository"
 git add -A .
 git commit -m "Update tick list for ${LAST_UPD}"
 echo "Pushing to repository"
-git -C fireboglists/ push
+git push
 
 echo "Cleaning up post start"
 rm -rf target/
