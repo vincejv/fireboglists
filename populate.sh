@@ -42,7 +42,7 @@ echo "Commiting to repository"
 /usr/bin/git add -A .
 /usr/bin/git commit -m "Update tick list for ${LAST_UPD}"
 echo "Pushing to repository"
-/usr/bin/git push "${GIT_PROT}://${GIT_CREDS}@{GIT_URL}"
+/usr/bin/git push "${GIT_PROT}://${GIT_CREDS}@${GIT_URL}"
 
 echo "Wait for git cache..."
 /usr/bin/sleep 5
