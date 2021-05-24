@@ -8,6 +8,8 @@ rm -rf working/
 mkdir target/
 mkdir working/
 
+systemd-notify --ready --status="Waiting for data..."
+
 echo "Downloading blocklist source"
 curl https://v.firebog.net/hosts/lists.php?type=tick > working/fireboglist.txt
 echo "Downloading blocklist"
