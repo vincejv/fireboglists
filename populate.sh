@@ -17,6 +17,10 @@ cat target/* > working/combinedlist.txt
 echo "Sorting and removing duplicates"
 sort working/combinedlist.txt | uniq > ticklist
 
+echo "Cleaning up repository before commit"
+rm -rf target/
+rm -rf working/
+
 echo "# Firebog Tick List" > README.md
 echo "Last updated: $LAST_UPD" >> README.md
 echo "Commiting to repository"
@@ -25,6 +29,8 @@ git commit -m "Update tick list for ${LAST_UPD}"
 echo "Pushing to repository"
 git push
 
-echo "Cleaning up post start"
-rm -rf target/
-rm -rf working/
+echo "Wait for git cache..."
+sleep 5
+echo "Updating pihole lists"
+pihole -g
+echo "Done!"
