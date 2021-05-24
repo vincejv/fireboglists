@@ -7,7 +7,7 @@ LAST_UPD=$(date -u)
 GIT_CREDS=$(cat /opt/scripts/ads/.gittoken)      # Git token in the format of ${USERNAME}:${TOKEN/PASSWORD}
 GIT_PROT="https"                                 # Git Protocol to use
 GIT_URL="github.com/vincejv/fireboglists"        # Destination repo, without protocol specified
-DELAY_WGET="7"                                  # Add wait to prevent scraping detection
+DELAY_WGET="4"                                  # Add wait to prevent scraping detection
 
 echo "Setting up git credentials"
 /usr/bin/git config user.name "$AUTHOR_NAME"
