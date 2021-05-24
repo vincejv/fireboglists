@@ -7,6 +7,7 @@ LAST_UPD=$(date -u)
 GIT_CREDS=$(cat /opt/scripts/ads/.gittoken)      # Git token in the format of ${USERNAME}:${TOKEN/PASSWORD}
 GIT_PROT="https"                                 # Git Protocol to use
 GIT_URL="github.com/vincejv/fireboglists"        # Destination repo, without protocol specified
+DELAY_WGET="7"                                  # Add wait to prevent scraping detection
 
 echo "Setting up git credentials"
 /usr/bin/git config user.name "$AUTHOR_NAME"
@@ -23,7 +24,7 @@ mkdir working/
 echo "Downloading blocklist source"
 /usr/bin/curl --user-agent "$USER_AGENT" https://v.firebog.net/hosts/lists.php?type=tick > working/fireboglist.txt
 echo "Downloading blocklist"
-/usr/bin/wget -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/
+/usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/
 echo "Combining lists"
 cat target/* > working/combinedlist.txt
 echo "Sorting and removing duplicates"
@@ -50,3 +51,4 @@ echo "Updating pihole lists"
 /usr/bin/systemd-notify --status="Updating pihole blocklists"
 /usr/local/bin/pihole -g
 echo "Done!"
+/usr/bin/systemd-notify --status="Done"
