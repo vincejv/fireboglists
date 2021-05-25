@@ -3,6 +3,7 @@
 GRAVITY_DB="/etc/pihole/gravity.db"
 GIT_CREDS_FILE="/opt/scripts/ads/.gittoken"
 BLOCKLIST_PATH="blocklists/"
+CRONLOG_PATH="cronlog/"
 README_FILE="README.md"
 
 # check if files exist
@@ -42,13 +43,14 @@ rm -rf working/
 mkdir target/
 mkdir working/
 mkdir -p "$BLOCKLIST_PATH"
+mkdir -p "$CRONLOG_PATH"
 
 /usr/bin/systemd-notify --ready --status="Downloading from sources"
 
 echo "Downloading blocklist source: $FIREBOG_TICKLIST"
 /usr/bin/curl --no-progress-meter --user-agent "$USER_AGENT" "$FIREBOG_TICKLIST" > working/fireboglist.txt
 echo "Downloading blocklists from list file"
-/usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/
+/usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/ | /usr/bin/tee "${CRONLOG_PATH}ticklist.log"
 echo "Combining files"
 cat target/* | grep -v '^\s*$\|^\s*\#' > working/combinedlist.txt
 
@@ -73,7 +75,7 @@ rm -rf working/
 /usr/bin/sed -i "2s/.*/Last updated: ${LAST_UPD}/" "$README_FILE"
 
 echo "Commiting to repository"
-/usr/bin/git add -A "$BLOCKLIST_PATH" "$README_FILE"                  # only commit blocklists
+/usr/bin/git add -A "$BLOCKLIST_PATH" "$README_FILE" "$CRONLOG_PATH"                # only commit blocklists, readme and cron logs automatically
 /usr/bin/git commit -m "Update blocklists for ${LAST_UPD}"
 echo "Pushing to repository"
 /usr/bin/git push "${GIT_PROT}://${GIT_CREDS}@${GIT_URL}"
