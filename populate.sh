@@ -15,11 +15,11 @@ prevalidation
 
 # Wget options
 USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"  # Custom user agent string to prevent detection
-DELAY_WGET="4"                                    # Add wait to prevent scraping detection
+DELAY_WGET="0"                                    # Add wait to prevent scraping detection
 
 # Gravity lists options
 LAST_UPD=$(date -u)                                       # Full UTC Date
-DAY_TO_CHECK="7"
+DAYS_TO_CHECK="7"
 DAYS_AGO=$(date -u -d "now - ${DAYS_TO_CHECK} days" +%s)  # Max Last gravity update
 GRAVITY_LAST_UPD=$(date -u -r "$GRAVITY_DB" +%s)          # Gravity DB Last update in UTC
 
@@ -66,8 +66,9 @@ echo "Pushing to repository"
 /usr/bin/git push "${GIT_PROT}://${GIT_CREDS}@${GIT_URL}"
 
 # Only update if Gravity list is older than DAYS_AGO
+echo "Gravity last updated on $(date -d @{GRAVITY_LAST_UPD})"
 if (( GRAVITY_LAST_UPD <= DAYS_AGO )); then
-  echo "Updating gravity db"
+  echo "Updating gravity db since last update was already ${DAYS_TO_CHECK} days ago"
   echo "Wait for git cache..."
   /usr/bin/sleep 5
   echo "Updating pihole lists"
