@@ -26,7 +26,7 @@ GRAVITY_LAST_UPD=$(date -u -r "$GRAVITY_DB" +%s)          # Gravity DB Last upda
 # Git options
 AUTHOR_NAME="Vince Jerald Villamora"             # Author name
 AUTHOR_EMAIL="vincevillamora@gmail.com"          # Author email
-GIT_CREDS=$(cat "$GIT_CREDS_FILE")      # Git token in the format of ${USERNAME}:${TOKEN/PASSWORD}
+GIT_CREDS=$(cat "$GIT_CREDS_FILE" 2>/dev/null)      # Git token in the format of ${USERNAME}:${TOKEN/PASSWORD}
 GIT_PROT="https"                                 # Git Protocol to use
 GIT_URL="github.com/vincejv/fireboglists"        # Destination repo, without protocol specified
 echo "Setting up git credentials"
