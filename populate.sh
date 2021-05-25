@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+FIREBOG_TICKLIST="https://v.firebog.net/hosts/lists.php?type=tick"
 GRAVITY_DB="/etc/pihole/gravity.db"
 GIT_CREDS_FILE="/opt/scripts/ads/.gittoken"
 BLOCKLIST_PATH="blocklists/"
@@ -48,7 +49,6 @@ echo "Downloading blocklists from list file"
 /usr/bin/truncate -s 0 "${CRONLOG_PATH}ticklist.log"
 
 # Wget -- start
-FIREBOG_TICKLIST="https://v.firebog.net/hosts/lists.php?type=tick"
 USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"  # Custom user agent string to prevent detection
 DELAY_WGET="4"                                    # Add wait to prevent scraping detection
 WAIT_RETRY="2"
