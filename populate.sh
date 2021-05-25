@@ -3,6 +3,7 @@
 GRAVITY_DB="/etc/pihole/gravity.db"
 GIT_CREDS_FILE="/opt/scripts/ads/.gittoken"
 BLOCKLIST_PATH="blocklists/"
+README_FILE="README.md"
 
 # check if files exist
 prevalidation() {
@@ -11,7 +12,6 @@ prevalidation() {
     exit 1 # terminate and indicate error
   fi
 }
-
 prevalidation
 
 # Wget options
@@ -60,8 +60,8 @@ rm -rf working/
 
 /usr/bin/systemd-notify --status="Processing blocklists"
 
-echo "# Firebog List" > README.md
-echo "Last updated: $LAST_UPD" >> README.md
+/usr/bin/sed -i '2s/.*/${LAST_UP}/' "$README_FILE"
+
 echo "Commiting to repository"
 /usr/bin/git add -A "$BLOCKLIST_PATH"                         # only commit blocklists
 /usr/bin/git commit -m "Update blocklists for ${LAST_UPD}"
