@@ -1,11 +1,16 @@
 # Firebog Tick List
 Last updated: Tue 25 May 2021 05:37:42 PM UTC
 
+Compiled ticklist (add to your pihole adlists)
+    
+    https://raw.githubusercontent.com/vincejv/fireboglists/master/blocklists/ticklist
+
 #### Blocklist source: https://firebog.net/
 
-Download script log is located at: `cronlog/` to check which sources were downloaded successfully and compiled to the main blocklist
+Cron script log located at: `cronlog/` to check which sources were downloaded successfully and compiled to the main blocklist
 
 ------------
+### For advanced users only who wants to compile their own lists
 
 ##### Systemd Configuration (need own git repository)
 - Runs daily
