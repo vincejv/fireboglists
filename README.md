@@ -7,7 +7,7 @@ Compiled ticklist (add to your pihole adlists)
 
 #### Blocklist source: https://firebog.net/
 
-Cron script log located at: `cronlog/` to check which sources were downloaded successfully and compiled to the main blocklist
+Cron script log located at `cronlog/` directory, this to check which sources were downloaded successfully and compiled to the main blocklist
 
 ------------
 ### For advanced users only who wants to compile their own lists
