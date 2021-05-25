@@ -2,6 +2,7 @@
 
 GRAVITY_DB="/etc/pihole/gravity.db"
 GIT_CREDS_FILE="/opt/scripts/ads/.gittoken"
+BLOCKLIST_PATH="blocklists/"
 
 # check if files exist
 prevalidation() {
@@ -40,17 +41,18 @@ rm -rf target/
 rm -rf working/
 mkdir target/
 mkdir working/
+mkdir -p "$BLOCKLIST_PATH"
 
 /usr/bin/systemd-notify --ready --status="Downloading from sources"
 
-echo "Downloading blocklist source"
+echo "Downloading blocklist source: %FIREBOG_TICKLIST"
 /usr/bin/curl --no-progress-meter --user-agent "$USER_AGENT" "$FIREBOG_TICKLIST" > working/fireboglist.txt
-echo "Downloading blocklist"
+echo "Downloading blocklists from list file"
 /usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/
-echo "Combining lists"
+echo "Combining files"
 cat target/* > working/combinedlist.txt
 echo "Sorting and removing duplicates"
-/usr/bin/sort working/combinedlist.txt | /usr/bin/uniq > ticklist
+/usr/bin/sort working/combinedlist.txt | /usr/bin/uniq > "${BLOCKLIST_PATH}ticklist"
 
 echo "Cleaning up repository before commit"
 rm -rf target/
@@ -58,11 +60,11 @@ rm -rf working/
 
 /usr/bin/systemd-notify --status="Processing blocklists"
 
-echo "# Firebog Tick List" > README.md
+echo "# Firebog List" > README.md
 echo "Last updated: $LAST_UPD" >> README.md
 echo "Commiting to repository"
-/usr/bin/git add -A .
-/usr/bin/git commit -m "Update tick list for ${LAST_UPD}"
+/usr/bin/git add -A "$BLOCKLIST_PATH"                         # only commit blocklists
+/usr/bin/git commit -m "Update blocklists for ${LAST_UPD}"
 echo "Pushing to repository"
 /usr/bin/git push "${GIT_PROT}://${GIT_CREDS}@${GIT_URL}"
 
