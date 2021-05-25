@@ -50,7 +50,8 @@ mkdir -p "$CRONLOG_PATH"
 echo "Downloading blocklist source: $FIREBOG_TICKLIST"
 /usr/bin/curl --no-progress-meter --user-agent "$USER_AGENT" "$FIREBOG_TICKLIST" > working/fireboglist.txt
 echo "Downloading blocklists from list file"
-/usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/ --output-file="${CRONLOG_PATH}ticklist.log"
+/usr/bin/truncate -s 0 "${CRONLOG_PATH}ticklist.log"
+/usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/ | /usr/bin/tee -a "${CRONLOG_PATH}ticklist.log"
 echo "Combining files"
 cat target/* | grep -v '^\s*$\|^\s*\#' > working/combinedlist.txt
 
