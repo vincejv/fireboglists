@@ -45,7 +45,7 @@ mkdir -p "$BLOCKLIST_PATH"
 
 /usr/bin/systemd-notify --ready --status="Downloading from sources"
 
-echo "Downloading blocklist source: %FIREBOG_TICKLIST"
+echo "Downloading blocklist source: $FIREBOG_TICKLIST"
 /usr/bin/curl --no-progress-meter --user-agent "$USER_AGENT" "$FIREBOG_TICKLIST" > working/fireboglist.txt
 echo "Downloading blocklists from list file"
 /usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/
