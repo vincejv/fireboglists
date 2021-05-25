@@ -15,11 +15,6 @@ prevalidation() {
 }
 prevalidation
 
-# Wget options
-USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"  # Custom user agent string to prevent detection
-DELAY_WGET="4"                                    # Add wait to prevent scraping detection
-FIREBOG_TICKLIST="https://v.firebog.net/hosts/lists.php?type=tick"
-
 # Gravity lists options
 LAST_UPD=$(date -u)                                       # Full UTC Date
 DAYS_TO_CHECK="7"
@@ -51,7 +46,21 @@ echo "Downloading blocklist source: $FIREBOG_TICKLIST"
 /usr/bin/curl --no-progress-meter --user-agent "$USER_AGENT" "$FIREBOG_TICKLIST" > working/fireboglist.txt
 echo "Downloading blocklists from list file"
 /usr/bin/truncate -s 0 "${CRONLOG_PATH}ticklist.log"
-/usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/ 2>&1 | /usr/bin/tee -a "${CRONLOG_PATH}ticklist.log"
+
+# Wget -- start
+FIREBOG_TICKLIST="https://v.firebog.net/hosts/lists.php?type=tick"
+USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"  # Custom user agent string to prevent detection
+DELAY_WGET="4"                                    # Add wait to prevent scraping detection
+WAIT_RETRY="2"
+READ_TIMEOUT="10"
+DEF_TIMEOUT="10"
+TRIES="10"
+
+/usr/bin/wget --retry-connrefused --waitretry="${WAIT_RETRY}" --read-timeout="${READ_TIMEOUT}" --timeout="${DEF_TIMEOUT}" --tries="${TRIES}" -w "$DELAY_WGET" --random-wait \
+              --no-dns-cache \
+              -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/ 2>&1 | /usr/bin/tee -a "${CRONLOG_PATH}ticklist.log"
+# Wget -- end
+
 echo "Combining files"
 cat target/* | grep -v '^\s*$\|^\s*\#' > working/combinedlist.txt
 
