@@ -66,7 +66,7 @@ echo "Pushing to repository"
 /usr/bin/git push "${GIT_PROT}://${GIT_CREDS}@${GIT_URL}"
 
 # Only update if Gravity list is older than DAYS_AGO
-echo "Gravity last updated on $(date -d @{GRAVITY_LAST_UPD})"
+echo "Gravity was last updated on $(date -d @${GRAVITY_LAST_UPD})"
 if (( GRAVITY_LAST_UPD <= DAYS_AGO )); then
   echo "Updating gravity db since last update was already ${DAYS_TO_CHECK} days ago"
   echo "Wait for git cache..."
