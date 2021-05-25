@@ -16,7 +16,7 @@ prevalidation
 
 # Wget options
 USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"  # Custom user agent string to prevent detection
-DELAY_WGET="0"                                    # Add wait to prevent scraping detection
+DELAY_WGET="4"                                    # Add wait to prevent scraping detection
 FIREBOG_TICKLIST="https://v.firebog.net/hosts/lists.php?type=tick"
 
 # Gravity lists options
