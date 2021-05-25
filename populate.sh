@@ -16,6 +16,7 @@ prevalidation
 # Wget options
 USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"  # Custom user agent string to prevent detection
 DELAY_WGET="0"                                    # Add wait to prevent scraping detection
+FIREBOG_TICKLIST="https://v.firebog.net/hosts/lists.php?type=tick"
 
 # Gravity lists options
 LAST_UPD=$(date -u)                                       # Full UTC Date
@@ -43,7 +44,7 @@ mkdir working/
 /usr/bin/systemd-notify --ready --status="Downloading from sources"
 
 echo "Downloading blocklist source"
-/usr/bin/curl --user-agent "$USER_AGENT" https://v.firebog.net/hosts/lists.php?type=tick > working/fireboglist.txt
+/usr/bin/curl --no-progress-meter --user-agent "$USER_AGENT" "$FIREBOG_TICKLIST" > working/fireboglist.txt
 echo "Downloading blocklist"
 /usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/
 echo "Combining lists"
