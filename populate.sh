@@ -61,7 +61,7 @@ echo "Downloading blocklists from list file"
 /usr/bin/truncate -s 0 "${CRONLOG_PATH}/ticklist.log"
 /usr/bin/wget --retry-connrefused --waitretry="${WAIT_RETRY}" --read-timeout="${READ_TIMEOUT}" --timeout="${DEF_TIMEOUT}" --tries="${TRIES}" -w "$DELAY_WGET" --random-wait \
               --no-dns-cache \
-              -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/ 2>&1 | /usr/bin/tee -a "${CRONLOG_PATH}ticklist.log"
+              -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/ 2>&1 | /usr/bin/tee -a "${CRONLOG_PATH}/ticklist.log"
 # Wget -- end
 
 echo "Combining files"
