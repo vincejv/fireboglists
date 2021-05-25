@@ -1,1 +1,10 @@
-/etc/systemd/system/blocklist-repo-update.timer
+[Unit]
+Description=Runs blocklists update every 2am
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=45m
+
+[Install]
+WantedBy=timers.target

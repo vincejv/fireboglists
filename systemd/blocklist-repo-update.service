@@ -1,1 +1,9 @@
-/etc/systemd/system/blocklist-repo-update.service
+[Unit]
+Description=Fetches blocklist from sources and pushes it in Git repository
+After=network-online.target
+Wants=blocklist-repo-update.timer
+
+[Service]
+Type=notify
+WorkingDirectory=/opt/scripts/ads/fireboglists
+ExecStart=/opt/scripts/ads/fireboglists/populate.sh
