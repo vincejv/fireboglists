@@ -1,5 +1,5 @@
 # Firebog Tick List
-replacement-line
+Last updated: ${LAST_UPD}
 
 #### Blocklist source: https://firebog.net/
 
