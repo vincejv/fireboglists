@@ -50,9 +50,19 @@ echo "Downloading blocklist source: %FIREBOG_TICKLIST"
 echo "Downloading blocklists from list file"
 /usr/bin/wget -w "$DELAY_WGET" --random-wait -nv -U "$USER_AGENT" -i working/fireboglist.txt -P target/
 echo "Combining files"
-cat target/* > working/combinedlist.txt
+cat target/* | grep -v '^\s*$\|^\s*\#' > working/combinedlist.txt
+
+# Print blocklist header -- start
+echo "# Title: Firebog.net Tick List" > "${BLOCKLIST_PATH}ticklist"
+echo "# Description: Lists compiled from https://v.firebog.net/hosts/lists.php?type=tick, using a cronjob" >> "${BLOCKLIST_PATH}ticklist"
+echo "#              Sources are downloaded and compiled daily using the systemd configuration found in compiler repository" >> "${BLOCKLIST_PATH}ticklist"
+echo "# Last modified: ${LAST_UPD}" >> "${BLOCKLIST_PATH}ticklist"
+echo "# Website: https://v.firebog.net/" >> "${BLOCKLIST_PATH}ticklist"
+echo "# Cron script compiler: https://github.com/vincejv/fireboglists" >> "${BLOCKLIST_PATH}ticklist"
+# Print blocklist header -- end
+
 echo "Sorting and removing duplicates"
-/usr/bin/sort working/combinedlist.txt | /usr/bin/uniq > "${BLOCKLIST_PATH}ticklist"
+/usr/bin/sort working/combinedlist.txt | /usr/bin/uniq >> "${BLOCKLIST_PATH}ticklist"
 
 echo "Cleaning up repository before commit"
 rm -rf target/
