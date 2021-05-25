@@ -10,8 +10,8 @@ PIHOLE_HTML_DIR="/var/www/html/"
 
 # check if files exist
 prevalidation() {
-  if [ ! -f "$GRAVITY_DB" ] || [ ! -f "$GIT_CREDS_FILE" ]; then
-    echo "Check if ${GRAVITY_DB} and ${GIT_CRED_FILE} exists" 1>&2
+  if [ ! -f "$GRAVITY_DB" ]; then
+    echo "Check if ${GRAVITY_DB} exists" 1>&2
     exit 1 # terminate and indicate error
   fi
 }
@@ -51,7 +51,7 @@ echo "Downloading blocklist source: $FIREBOG_TICKLIST"
 
 # Wget -- start
 USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"  # Custom user agent string to prevent detection
-DELAY_WGET="4"                                    # Add wait to prevent scraping detection
+DELAY_WGET="0"                                    # Add wait to prevent scraping detection
 WAIT_RETRY="2"
 READ_TIMEOUT="10"
 DEF_TIMEOUT="10"
@@ -98,7 +98,8 @@ if [[ ! -z "${GIT_CREDS}" ]]; then
   /usr/bin/git push "${GIT_PROT}://${GIT_CREDS}@${GIT_URL}"
 else
   # Use lighttpd or PiHole http server
-  echo "Copying blocklists to html directory: ${PIHOLE_HTML_DIR}/${BLOCKLIST_PATH}"
+  echo "Copying blocklists to html directory (git-less approach): ${PIHOLE_HTML_DIR}/${BLOCKLIST_PATH}"
+  rm -rf "${PIHOLE_HTML_DIR}/${BLOCKLIST_PATH}"
   mkdir -p "${PIHOLE_HTML_DIR}/${BLOCKLIST_PATH}"
   cp -r "${BLOCKLIST_PATH}/" "${PIHOLE_HTML_DIR}"
 fi

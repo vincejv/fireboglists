@@ -1,5 +1,5 @@
 # Firebog Tick List
-Last updated: Tue 25 May 2021 04:40:05 PM UTC
+Last updated: Tue 25 May 2021 05:29:09 PM UTC
 
 #### Blocklist source: https://firebog.net/
 
@@ -22,6 +22,7 @@ Download script log is located at: `cronlog/` to check which sources were downlo
 - (Optional, can be skipped) Unset git credentials, no need for token file
 - Set `PIHOLE_HTML_DIR` to pihole root `wwww` directory, this is usally `/var/www/html/`
 - Add to pihole adlists `http://127.0.0.1/blocklists/${BLOCKLIST_FILE}` (add port if necessary)
+- Make sure no existing files or directory are in `"${PIHOLE_HTML_DIR}/${BLOCKLIST_PATH}"` or else it will get overwritten
 
 #### Install as Systemd service (you may copy paste this to terminal, run as root)
 
