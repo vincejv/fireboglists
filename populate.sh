@@ -60,7 +60,7 @@ rm -rf working/
 
 /usr/bin/systemd-notify --status="Processing blocklists"
 
-/usr/bin/sed -i '2s/.*/${LAST_UP}/' "$README_FILE"
+/usr/bin/sed -i '2s/.*/Last updated: ${LAST_UP}/' "$README_FILE"
 
 echo "Commiting to repository"
 /usr/bin/git add -A "$BLOCKLIST_PATH"                         # only commit blocklists
