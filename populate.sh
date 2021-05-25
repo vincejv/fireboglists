@@ -87,7 +87,7 @@ rm -rf working/
 
 /usr/bin/systemd-notify --status="Processing blocklists"
 
-/usr/bin/sed -i "2s/.*/Last updated: ${LAST_UPD}/" "$README_FILE"
+/usr/bin/sed -i "2s/.*/Blocklist last update: ${LAST_UPD}/" "$README_FILE"
 
 if [[ ! -z "${GIT_CREDS}" ]]; then
   # Push to git if git creds are set in file
