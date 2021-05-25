@@ -3,6 +3,8 @@ replacement-line
 
 #### Blocklist source: https://firebog.net/
 
+------------
+
 ##### Systemd Cconfiguration
 - Runs daily
 - Updates pihole blocklists if older than 7 days
