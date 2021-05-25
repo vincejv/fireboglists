@@ -1,5 +1,5 @@
 # Firebog Tick List
-Last updated: Tue 25 May 2021 04:01:04 PM UTC
+Last updated: Tue 25 May 2021 04:10:31 PM UTC
 
 #### Blocklist source: https://firebog.net/
 
