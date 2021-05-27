@@ -32,6 +32,7 @@ GIT_URL="github.com/vincejv/fireboglists"        # Destination repo, without pro
 echo "Setting up git credentials"
 /usr/bin/git config user.name "$AUTHOR_NAME"
 /usr/bin/git config user.email "$AUTHOR_EMAIL"
+/usr/bin/git config pull.rebase false
 
 # Pre-clean up
 echo "Cleaning up before start"
@@ -51,7 +52,7 @@ echo "Downloading blocklist source: $FIREBOG_TICKLIST"
 
 # Wget -- start
 USER_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"  # Custom user agent string to prevent detection
-DELAY_WGET="0"                                    # Add wait to prevent scraping detection
+DELAY_WGET="4"                                    # Add wait to prevent scraping detection
 WAIT_RETRY="2"
 READ_TIMEOUT="10"
 DEF_TIMEOUT="10"
@@ -95,6 +96,7 @@ if [[ ! -z "${GIT_CREDS}" ]]; then
   /usr/bin/git add -A "$BLOCKLIST_PATH" "$README_FILE" "$CRONLOG_PATH"                # only commit blocklists, readme and cron logs automatically
   /usr/bin/git commit -m "Update blocklists for ${LAST_UPD}"
   echo "Pushing to repository"
+  /usr/bin/git pull                                                           # merge new commits
   /usr/bin/git push "${GIT_PROT}://${GIT_CREDS}@${GIT_URL}"
 else
   # Use lighttpd or PiHole http server
