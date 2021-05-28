@@ -1,5 +1,7 @@
 [Unit]
 Description=Runs blocklists update every 2am
+After=network-online.target
+Wants=network-online.target
 
 [Timer]
 OnCalendar=daily

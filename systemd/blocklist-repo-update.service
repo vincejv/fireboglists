@@ -1,7 +1,7 @@
 [Unit]
 Description=Fetches blocklist from sources and pushes it in Git repository
 After=network-online.target
-Wants=blocklist-repo-update.timer
+Wants=network-online.target blocklist-repo-update.timer
 
 [Service]
 Type=notify
