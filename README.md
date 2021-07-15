@@ -1,5 +1,5 @@
 # Firebog Tick List
-### Blocklist last update: Wed 14 Jul 2021 04:05:41 PM UTC
+### Blocklist last update: Thu 15 Jul 2021 04:25:18 PM UTC
 
 Compiled ticklist (add to your pihole adlists):
     
