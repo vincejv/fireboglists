@@ -1,48 +1,48 @@
-2021-08-02 00:03:54 URL:https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt [756205/756205] -> "target/KADhosts.txt" [1]
-2021-08-02 00:03:57 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts [1696/1696] -> "target/hosts" [1]
+2021-08-03 00:24:05 URL:https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt [756329/756329] -> "target/KADhosts.txt" [1]
+2021-08-03 00:24:09 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts [1696/1696] -> "target/hosts" [1]
 failed: Connection timed out.
 failed: Connection timed out.
-2021-08-02 00:04:23 URL:https://v.firebog.net/hosts/static/w3kbl.txt [18078] -> "target/w3kbl.txt" [1]
-2021-08-02 00:04:30 URL:https://adaway.org/hosts.txt [304471/304471] -> "target/hosts.txt" [1]
+2021-08-03 00:24:36 URL:https://v.firebog.net/hosts/static/w3kbl.txt [18078] -> "target/w3kbl.txt" [1]
+2021-08-03 00:24:40 URL:https://adaway.org/hosts.txt [304275/304275] -> "target/hosts.txt" [1]
 failed: Connection timed out.
 failed: Connection timed out.
-2021-08-02 00:04:56 URL:https://v.firebog.net/hosts/AdguardDNS.txt [594967] -> "target/AdguardDNS.txt" [1]
-2021-08-02 00:05:01 URL:https://v.firebog.net/hosts/Admiral.txt [11598] -> "target/Admiral.txt" [1]
-2021-08-02 00:05:28 URL:https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt [1347495/1347495] -> "target/adservers.txt" [1]
-2021-08-02 00:05:32 URL:https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt [43616/43616] -> "target/simple_ad.txt" [1]
+2021-08-03 00:25:05 URL:https://v.firebog.net/hosts/AdguardDNS.txt [594967] -> "target/AdguardDNS.txt" [1]
+2021-08-03 00:25:09 URL:https://v.firebog.net/hosts/Admiral.txt [11598] -> "target/Admiral.txt" [1]
+2021-08-03 00:25:18 URL:https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt [1347495/1347495] -> "target/adservers.txt" [1]
+2021-08-03 00:25:22 URL:https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt [43616/43616] -> "target/simple_ad.txt" [1]
 failed: Connection timed out.
 failed: Connection timed out.
-2021-08-02 00:05:57 URL:https://v.firebog.net/hosts/Easylist.txt [204433] -> "target/Easylist.txt" [1]
-2021-08-02 00:06:03 URL:https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext [96326] -> "target/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext" [1]
-2021-08-02 00:06:09 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts [276/276] -> "target/hosts.1" [1]
-2021-08-02 00:06:13 URL:https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts [491451/491451] -> "target/hosts.2" [1]
+2021-08-03 00:25:49 URL:https://v.firebog.net/hosts/Easylist.txt [204433] -> "target/Easylist.txt" [1]
+2021-08-03 00:25:58 URL:https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext [96401] -> "target/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext" [1]
+2021-08-03 00:26:03 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts [276/276] -> "target/hosts.1" [1]
+2021-08-03 00:26:11 URL:https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts [491451/491451] -> "target/hosts.2" [1]
 failed: Connection timed out.
 failed: Connection timed out.
-2021-08-02 00:06:39 URL:https://v.firebog.net/hosts/Easyprivacy.txt [243563] -> "target/Easyprivacy.txt" [1]
-2021-08-02 00:06:44 URL:https://v.firebog.net/hosts/Prigent-Ads.txt [59286] -> "target/Prigent-Ads.txt" [1]
-2021-08-02 00:06:47 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts [43235/43235] -> "target/hosts.3" [1]
-2021-08-02 00:06:51 URL:https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt [13290/13290] -> "target/spy.txt" [1]
+2021-08-03 00:26:38 URL:https://v.firebog.net/hosts/Easyprivacy.txt [243563] -> "target/Easyprivacy.txt" [1]
+2021-08-03 00:26:44 URL:https://v.firebog.net/hosts/Prigent-Ads.txt [59286] -> "target/Prigent-Ads.txt" [1]
+2021-08-03 00:26:49 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts [43235/43235] -> "target/hosts.3" [1]
+2021-08-03 00:26:55 URL:https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt [13290/13290] -> "target/spy.txt" [1]
 failed: Connection timed out.
-2021-08-02 00:07:39 URL:https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt [1683959/1683959] -> "target/firstparty-trackers-hosts.txt" [1]
-2021-08-02 00:07:43 URL:https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt [179139/179139] -> "target/AntiMalwareHosts.txt" [1]
-2021-08-02 00:07:49 URL:https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt [1650/1650] -> "target/latestdomains.txt" [1]
-2021-08-02 00:07:53 URL:https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt [44155/44155] -> "target/simple_malvertising.txt" [1]
-failed: Connection timed out.
-failed: Connection timed out.
-2021-08-02 00:08:21 URL:https://v.firebog.net/hosts/Prigent-Crypto.txt [247613] -> "target/Prigent-Crypto.txt" [1]
+2021-08-03 00:27:37 URL:https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt [1683959/1683959] -> "target/firstparty-trackers-hosts.txt" [1]
+2021-08-03 00:27:42 URL:https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt [179139/179139] -> "target/AntiMalwareHosts.txt" [1]
+2021-08-03 00:27:47 URL:https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt [1674/1674] -> "target/latestdomains.txt" [1]
+2021-08-03 00:27:52 URL:https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt [44155/44155] -> "target/simple_malvertising.txt" [1]
 failed: Connection timed out.
 failed: Connection timed out.
+2021-08-03 00:28:17 URL:https://v.firebog.net/hosts/Prigent-Crypto.txt [247613] -> "target/Prigent-Crypto.txt" [1]
 failed: Connection timed out.
-2021-08-02 00:08:56 URL:https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt [43844/43844] -> "target/Mandiant_APT1_Report_Appendix_D.txt" [1]
 failed: Connection timed out.
 failed: Connection timed out.
-2021-08-02 00:09:23 URL:https://phishing.army/download/phishing_army_blocklist_extended.txt [887683] -> "target/phishing_army_blocklist_extended.txt" [1]
+2021-08-03 00:28:50 URL:https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt [43844/43844] -> "target/Mandiant_APT1_Report_Appendix_D.txt" [1]
 failed: Connection timed out.
-2021-08-02 00:09:40 URL:https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt [11720] -> "target/notrack-malware.txt" [1]
-2021-08-02 00:09:43 URL:https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt [146905/146905] -> "target/main-blacklist.txt" [1]
-2021-08-02 00:09:47 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts [58602/58602] -> "target/hosts.4" [1]
-2021-08-02 00:09:53 URL:https://urlhaus.abuse.ch/downloads/hostfile/ [30741/30741] -> "target/index.html" [1]
-2021-08-02 00:10:00 URL:https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser [97745/97745] -> "target/hosts_browser" [1]
-FINISHED --2021-08-02 00:10:00--
-Total wall clock time: 6m 10s
-Downloaded: 28 files, 7.3M in 1m 8s (109 KB/s)
+failed: Connection timed out.
+2021-08-03 00:29:15 URL:https://phishing.army/download/phishing_army_blocklist_extended.txt [885783] -> "target/phishing_army_blocklist_extended.txt" [1]
+failed: Connection timed out.
+2021-08-03 00:29:30 URL:https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt [11720] -> "target/notrack-malware.txt" [1]
+2021-08-03 00:29:34 URL:https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt [146905/146905] -> "target/main-blacklist.txt" [1]
+2021-08-03 00:29:41 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts [58602/58602] -> "target/hosts.4" [1]
+2021-08-03 00:29:45 URL:https://urlhaus.abuse.ch/downloads/hostfile/ [30442/30442] -> "target/index.html" [1]
+2021-08-03 00:29:52 URL:https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser [97745/97745] -> "target/hosts_browser" [1]
+FINISHED --2021-08-03 00:29:52--
+Total wall clock time: 5m 50s
+Downloaded: 28 files, 7.3M in 45s (164 KB/s)
