@@ -1,48 +1,48 @@
-2021-08-29 00:24:15 URL:https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt [821767/821767] -> "target/KADhosts.txt" [1]
-2021-08-29 00:24:18 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts [1696/1696] -> "target/hosts" [1]
-failed: Network is unreachable.
-failed: Network is unreachable.
-2021-08-29 00:24:25 URL:https://v.firebog.net/hosts/static/w3kbl.txt [18078] -> "target/w3kbl.txt" [1]
-2021-08-29 00:24:32 URL:https://adaway.org/hosts.txt [303456/303456] -> "target/hosts.txt" [1]
-failed: Network is unreachable.
-failed: Network is unreachable.
-2021-08-29 00:24:37 URL:https://v.firebog.net/hosts/AdguardDNS.txt [606898] -> "target/AdguardDNS.txt" [1]
-2021-08-29 00:24:41 URL:https://v.firebog.net/hosts/Admiral.txt [11598] -> "target/Admiral.txt" [1]
-2021-08-29 00:24:47 URL:https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt [1347495/1347495] -> "target/adservers.txt" [1]
-2021-08-29 00:24:55 URL:https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt [43616/43616] -> "target/simple_ad.txt" [1]
-failed: Network is unreachable.
-failed: Network is unreachable.
-2021-08-29 00:24:59 URL:https://v.firebog.net/hosts/Easylist.txt [214258] -> "target/Easylist.txt" [1]
-2021-08-29 00:25:05 URL:https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext [96398] -> "target/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext" [1]
-2021-08-29 00:25:10 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts [276/276] -> "target/hosts.1" [1]
-2021-08-29 00:25:16 URL:https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts [498597/498597] -> "target/hosts.2" [1]
-failed: Network is unreachable.
-failed: Network is unreachable.
-2021-08-29 00:25:23 URL:https://v.firebog.net/hosts/Easyprivacy.txt [242558] -> "target/Easyprivacy.txt" [1]
-2021-08-29 00:25:25 URL:https://v.firebog.net/hosts/Prigent-Ads.txt [59286] -> "target/Prigent-Ads.txt" [1]
-2021-08-29 00:25:32 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts [43235/43235] -> "target/hosts.3" [1]
-2021-08-29 00:25:37 URL:https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt [13290/13290] -> "target/spy.txt" [1]
-failed: Network is unreachable.
-2021-08-29 00:25:47 URL:https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt [3672715/3672715] -> "target/firstparty-trackers-hosts.txt" [1]
-2021-08-29 00:25:51 URL:https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt [180595/180595] -> "target/AntiMalwareHosts.txt" [1]
-2021-08-29 00:25:58 URL:https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt [1635/1635] -> "target/latestdomains.txt" [1]
-2021-08-29 00:26:06 URL:https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt [44155/44155] -> "target/simple_malvertising.txt" [1]
-failed: Network is unreachable.
-failed: Network is unreachable.
-2021-08-29 00:26:10 URL:https://v.firebog.net/hosts/Prigent-Crypto.txt [247613] -> "target/Prigent-Crypto.txt" [1]
-failed: Network is unreachable.
-failed: Network is unreachable.
-failed: Network is unreachable.
-2021-08-29 00:26:16 URL:https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt [43844/43844] -> "target/Mandiant_APT1_Report_Appendix_D.txt" [1]
-failed: Network is unreachable.
-failed: Network is unreachable.
-2021-08-29 00:26:24 URL:https://phishing.army/download/phishing_army_blocklist_extended.txt [942789] -> "target/phishing_army_blocklist_extended.txt" [1]
-failed: Network is unreachable.
-2021-08-29 00:26:28 URL:https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt [11735] -> "target/notrack-malware.txt" [1]
-2021-08-29 00:26:34 URL:https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt [146905/146905] -> "target/main-blacklist.txt" [1]
-2021-08-29 00:26:38 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts [58602/58602] -> "target/hosts.4" [1]
-2021-08-29 00:26:46 URL:https://urlhaus.abuse.ch/downloads/hostfile/ [47404/47404] -> "target/index.html" [1]
-2021-08-29 00:26:54 URL:https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser [97745/97745] -> "target/hosts_browser" [1]
-FINISHED --2021-08-29 00:26:54--
-Total wall clock time: 2m 41s
-Downloaded: 28 files, 9.4M in 14s (668 KB/s)
+2021-08-30 00:03:07 URL:https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt [826795/826795] -> "target/KADhosts.txt" [1]
+2021-08-30 00:03:12 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts [1696/1696] -> "target/hosts" [1]
+failed: No route to host.
+failed: No route to host.
+2021-08-30 00:03:23 URL:https://v.firebog.net/hosts/static/w3kbl.txt [18078] -> "target/w3kbl.txt" [1]
+2021-08-30 00:03:30 URL:https://adaway.org/hosts.txt [304788/304788] -> "target/hosts.txt" [1]
+failed: No route to host.
+failed: No route to host.
+2021-08-30 00:03:42 URL:https://v.firebog.net/hosts/AdguardDNS.txt [606898] -> "target/AdguardDNS.txt" [1]
+2021-08-30 00:03:48 URL:https://v.firebog.net/hosts/Admiral.txt [11598] -> "target/Admiral.txt" [1]
+2021-08-30 00:03:55 URL:https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt [1347495/1347495] -> "target/adservers.txt" [1]
+2021-08-30 00:04:02 URL:https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt [43616/43616] -> "target/simple_ad.txt" [1]
+failed: No route to host.
+failed: No route to host.
+2021-08-30 00:04:15 URL:https://v.firebog.net/hosts/Easylist.txt [214258] -> "target/Easylist.txt" [1]
+2021-08-30 00:04:22 URL:https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext [96398] -> "target/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext" [1]
+2021-08-30 00:04:27 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts [276/276] -> "target/hosts.1" [1]
+2021-08-30 00:04:31 URL:https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts [498597/498597] -> "target/hosts.2" [1]
+failed: No route to host.
+failed: No route to host.
+2021-08-30 00:04:43 URL:https://v.firebog.net/hosts/Easyprivacy.txt [242558] -> "target/Easyprivacy.txt" [1]
+2021-08-30 00:04:46 URL:https://v.firebog.net/hosts/Prigent-Ads.txt [59286] -> "target/Prigent-Ads.txt" [1]
+2021-08-30 00:04:50 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts [43235/43235] -> "target/hosts.3" [1]
+2021-08-30 00:04:55 URL:https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt [13290/13290] -> "target/spy.txt" [1]
+failed: No route to host.
+2021-08-30 00:05:05 URL:https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt [3656814/3656814] -> "target/firstparty-trackers-hosts.txt" [1]
+2021-08-30 00:05:10 URL:https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt [180595/180595] -> "target/AntiMalwareHosts.txt" [1]
+2021-08-30 00:05:16 URL:https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt [1763/1763] -> "target/latestdomains.txt" [1]
+2021-08-30 00:05:22 URL:https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt [44155/44155] -> "target/simple_malvertising.txt" [1]
+failed: No route to host.
+failed: No route to host.
+2021-08-30 00:05:35 URL:https://v.firebog.net/hosts/Prigent-Crypto.txt [247613] -> "target/Prigent-Crypto.txt" [1]
+failed: No route to host.
+failed: No route to host.
+failed: No route to host.
+2021-08-30 00:05:50 URL:https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt [43844/43844] -> "target/Mandiant_APT1_Report_Appendix_D.txt" [1]
+failed: No route to host.
+failed: No route to host.
+2021-08-30 00:06:03 URL:https://phishing.army/download/phishing_army_blocklist_extended.txt [944746] -> "target/phishing_army_blocklist_extended.txt" [1]
+failed: No route to host.
+2021-08-30 00:06:11 URL:https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt [11735] -> "target/notrack-malware.txt" [1]
+2021-08-30 00:06:18 URL:https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt [146905/146905] -> "target/main-blacklist.txt" [1]
+2021-08-30 00:06:23 URL:https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts [58602/58602] -> "target/hosts.4" [1]
+2021-08-30 00:06:29 URL:https://urlhaus.abuse.ch/downloads/hostfile/ [44935/44935] -> "target/index.html" [1]
+2021-08-30 00:06:37 URL:https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser [97745/97745] -> "target/hosts_browser" [1]
+FINISHED --2021-08-30 00:06:37--
+Total wall clock time: 3m 31s
+Downloaded: 28 files, 9.4M in 13s (717 KB/s)
