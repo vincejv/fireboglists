@@ -1,6 +1,6 @@
 # Title: Firebog.net Tick List
 # Description: Lists compiled from https://v.firebog.net/hosts/lists.php?type=tick, using a cronjob
 #              Sources are downloaded and compiled daily using the systemd configuration found in compiler repository
-# Last modified: Fri 10 Sep 2021 12:51:31 PM UTC
+# Last modified: Sun 12 Sep 2021 10:20:19 AM UTC
 # Website: https://v.firebog.net/
 # Cron script compiler: https://github.com/vincejv/fireboglists
